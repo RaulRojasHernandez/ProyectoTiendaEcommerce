@@ -1,0 +1,194 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #666;
+    background: #f2f2f2;
+    font-size: 1em;
+    line-height: 1.5em;
+    padding-top: 80px; /* Relleno superior igual a la altura de la cabecera*/
+}
+
+h1 {
+    font-size: 2.3em;
+    line-height: 1.3em;
+    margin: 15px 0;
+    text-align: center;
+    font-weight: 300;
+}
+
+h3 {
+    text-align: center;
+}
+
+
+p {
+    margin: 0 0 1.5em 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+#main-header {
+    background: #029f00;
+    color: white;
+    height: 80px;
+    width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+    left: 0; /* Posicionamos la cabecera al lado izquierdo */
+    top: 0; /* Posicionamos la cabecera pegada arriba */
+    position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+}
+
+    #main-header a {
+        color: white;
+    }
+
+/*
+ * Logo
+ */
+#logo-header {
+    float: left;
+    padding: 15px 0 0 20px;
+    text-decoration: none;
+}
+
+    #logo-header:hover {
+        color: #0b76a6;
+    }
+
+    #logo-header .site-name {
+        display: block;
+        font-weight: 700;
+        font-size: 1.2em;
+    }
+
+    #logo-header .site-desc {
+        display: block;
+        font-weight: 300;
+        font-size: 0.8em;
+        color: #999;
+    }
+
+#alineacion {
+    align-content: center
+}
+
+/*
+ * Navegación
+ */
+nav {
+    float: right;
+}
+
+    nav ul {
+        padding: 0;
+        list-style: none;
+    }
+
+        nav ul li {
+            display: inline-block;
+            line-height: 30px;
+        }
+
+            nav ul li a {
+                padding: 0 10px;
+                text-decoration: none;
+            }
+                nav ul li a:hover {
+                    background: #0b76a6;
+                }
+
+        nav ul a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 15px;
+            padding: 10px;
+            font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+
+
+        nav ul ul {
+            display: none;
+            position: absolute;
+            /*left: 0; lo manda a la izquierda */
+            background: #016b00;
+            padding: 0;
+        }
+
+            nav ul ul li {
+                float: none;
+                width: 150px;
+            }
+
+            nav ul ul a {
+                line-height: 120%;
+                padding: 10px 15px;
+            }
+
+        nav ul li:hover > ul {
+            display: block;
+        }
+
+#main-content {
+    background: white;
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+
+    #main-content header,
+    #main-content .content {
+        padding: 40px;
+    }
+
+
+#main-footer {
+    background: black;
+    height: 20px;
+    border-top: 2px solid rgba(0, 0, 0, 0.24);
+    /*  poner footer abajo */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.busq {
+    border-radius: 5px;
+    border: 0;
+    width: 300px;
+    height: 20px;
+}
+
+.bbusq {
+    border-radius: 5px;
+    border: 0;
+    width: 30px;
+    height: 25px;
+}
+
+.cant {
+    border-radius: 5px;
+    border: 0;
+    width: 30px;
+    height: 20px;
+}
+
+.regis{
+    border-radius: 5px;
+    border: 0;
+    width: 200px;
+    height: 20px;
+    color: dimgrey;
+}
